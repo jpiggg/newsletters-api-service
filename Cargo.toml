@@ -1,0 +1,18 @@
+[package]
+name = "newsletter-api-service"
+authors = ["Julia Gracheva <isdolinskayaym@gmail.com>"]
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+
+[[bin]]
+
+name = "newsletter-api-service"
+
+[dependencies]
+actix-web = "4"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+
+[dev-dependencies]
+reqwest = "0.12.15"
